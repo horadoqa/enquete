@@ -27,6 +27,7 @@ document.getElementById('poll-form').addEventListener('submit', async function (
 });
 
 async function fetchResults() {
+
     const response = await fetch('http://localhost:3000/resultados');
     const results = await response.json();
     
@@ -48,7 +49,11 @@ async function fetchResults() {
     const totalVotesElement = document.createElement('li');
     totalVotesElement.textContent = `Total de votos: ${totalVotes}`;
     resultsList.appendChild(totalVotesElement);
+
 }
 
 // Carregar resultados quando a página for carregada
-fetchResults();
+// fetchResults();
+
+// Atualizar os resultados a cada 1 segundo (1000 milissegundos)
+setInterval(fetchResults, 1000);

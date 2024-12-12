@@ -31,6 +31,10 @@ onde:
 /enquete: Endpoint para enviar o voto. Ele recebe o framework escolhido e incrementa a contagem de votos.
 /resultados: Endpoint para obter os resultados da enquete. Ele retorna todos os votos de cada framework.
 
+## Utilizando o MongoDB atlas para armazenar os resultados
+
+https://cloud.mongodb.com/
+
 ## Iniciar o Servidor
 
 Agora, você pode iniciar o servidor:

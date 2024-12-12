@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hora do QA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Container de imagem e título -->
+    <div class="image-container">
+      <img src="hqa.png" alt="HQA">
+    </div>
+    
+    <h1>Qual framework você prefere?</h1>
+
+    <form id="poll-form" method="POST" class="poll-form">
+      <div class="option">
+        <input type="radio" id="robot" name="framework" value="Robot Framework" required>
+        <label for="robot">Robot Framework</label>
+      </div>
+      
+      <div class="option">
+        <input type="radio" id="selenium" name="framework" value="Selenium" required>
+        <label for="selenium">Selenium</label>
+      </div>
+      
+      <div class="option">
+        <input type="radio" id="cypress" name="framework" value="Cypress" required>
+        <label for="cypress">Cypress</label>
+      </div>
+      
+      <div class="option">
+        <input type="radio" id="playwright" name="framework" value="Playwright" required>
+        <label for="playwright">Playwright</label>
+      </div>
+      
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div class="thank-you-message hidden" >
+      <p>Obrigado por participar da enquete!</p>
+    </div>
+
+    <div id="loading">Carregando...</div>
+  </div>
+
+  <div class="container">
+    <!-- Adicionando a lista de resultados -->
+    <h2>Resultados</h2>
+    <ul id="results-list">
+      <!-- Os resultados serão exibidos aqui -->
+    </ul>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

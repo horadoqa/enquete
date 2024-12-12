@@ -1,0 +1,131 @@
+/* Resetando estilos padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo global da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(30, 33, 34);;
+  display: flex;
+  flex-direction: column;  /* Mudança aqui para exibir os containers em uma coluna */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;  /* Espaço entre os containers (opcional) */
+}
+
+/* Container principal */
+.container {
+  background-color: rgb(24, 26, 27);;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.image-container {
+  margin-bottom: 20px; /* Espaço entre a imagem e o container de cadastro */
+  text-align: center;
+}
+
+.image-container img {
+  width: 150px; /* Ajuste para o tamanho desejado */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Título da enquete */
+h1, h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilo para o formulário de votação */
+.poll-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #555;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  accent-color: #4caf50;
+}
+
+label {
+  font-size: 18px;
+}
+
+/* Botão de envio */
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Mensagem de agradecimento (inicialmente oculta) */
+.thank-you-message {
+  display: none;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+button:focus + .thank-you-message {
+  display: block;
+}
+
+ul {
+  list-style-type: none;  /* Remove os bullets */
+  padding-left: 0;        /* Remove o espaçamento à esquerda, se necessário */
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+#loading {
+  display: none;
+}
+
+ul li:last-child {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+ul li:last-child:hover {
+  background-color: #45a049; /* Um verde mais escuro quando o mouse passar por cima */
+}
